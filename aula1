@@ -1,5 +1,29 @@
 package com.company;
 
+public class GerenciarEscola {
+
+    public static void main(String[] args) {
+        //Intenção: criar dois cursos
+        //Em seguida apresentar os dados dos mesmos
+        Curso curso1 = new Curso();
+        curso1.cursoId = 1;
+        curso1.descricao = "ADS";
+        curso1.turno = "NOITE";
+        curso1.local = "FATEC";
+        curso1.sala = "A5";
+
+        Curso curso2 = new Curso();
+        curso2.cursoId = 2;
+        curso2.descricao = "PROJETOS";
+        curso2.turno = "NOITE";
+        curso2.local = "FATEC";
+        curso2.sala = "A1";
+
+        curso1.listarDados();
+        curso2.listarDados();
+    }
+}
+
 public class Curso {
     //1. Atributos
     public int cursoId;
@@ -21,3 +45,77 @@ public class Curso {
         this.sala = sala;
     }
 }
+
+package com.company;
+
+import java.sql.SQLOutput;
+
+public class prjApolice {
+    public String nomeSegurado;
+    public int Idade;
+    public float valorPremio;
+
+    public void imprimir(){
+        System.out.println(){
+            System.out.println("Nome do segurado" + nomeSegurado);
+            System.out.println("Idade do segurado" + Idade);
+            System.out.println("Valor do premio" + valorPremio)
+            System.out.println("Nome do segurado"+ nomeSegurado + "Idade do segurado"+ Idade + "Valor do premio" + valorPremio);
+        };
+    }
+}
+
+package com.company;
+
+public class GerenciaApolice {
+
+    public static void main(String[])args{
+
+        prjApolice prjApolice = new prjApolice();
+        prjApolice.Idade = 19;
+        prjApolice.nomeSegurado = "Felipe";
+        prjApolice.valorPremio = (float) 50000.0;
+        prjApolice.imprimir();
+    }
+}
+public class Usuario {
+    //atributos com visibilidade privada
+    private String nome;
+    private String email;
+    private String login;
+    private String senha;
+
+    //Metodo
+    public Usuario(String nome, String email, String login, String senha){
+        this.nome = nome;
+        this.email = email;
+        this.login = login;
+        this.senha = senha;
+        System.out.println("Objeto construido");
+
+    }
+    //Metodo
+    public void provarExistencia(){
+        if (nome == null){
+            System.out.println("Não existe");
+        }
+        System.out.println("Usuário" + nome + "Existe");
+        System.out.println("Email" + email + "Existe");
+    }
+}
+
+package com.company;
+
+public class GerenciaUsuario {
+    public static void main(String[] args){
+        Usuario usu = new Usuario("Felipe",
+                "luis.fdallgnol@hotmail.com",
+                "abc",
+                "123");
+
+        usu.provarExistencia();
+        System.out.println("");
+    }
+}
+
+
