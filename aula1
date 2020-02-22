@@ -1,0 +1,23 @@
+package com.company;
+
+public class Curso {
+    //1. Atributos
+    public int cursoId;
+    public String descricao;
+    public String turno;
+    public String local;
+    public String sala;
+
+    //2. Métodos
+    public void listarDados(){
+        System.out.println("Id do curso" + cursoId);
+        System.out.println("Descrição" + descricao);
+        System.out.println("Turno" + turno);
+        System.out.println("Local" + local);
+        System.out.println("Sala" + sala);
+        System.out.println("-------------------------");
+    }
+    public void setSala (String sala){
+        this.sala = sala;
+    }
+}
