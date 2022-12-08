@@ -2,7 +2,6 @@ package com.company;
 
 public class GerenciarEscola {
 
-    public static void main(String[] args) {
         //Intenção: criar dois cursos
         //Em seguida apresentar os dados dos mesmos
         Curso curso1 = new Curso();
