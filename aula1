@@ -12,7 +12,7 @@ public class GerenciarEscola {
         curso1.local = "FATEC";
         curso1.sala = "A5";
 
-        Curso curso2 = new Curso();
+        Curso curso2 = no();
         curso2.cursoId = 2;
         curso2.descricao = "PROJETOS";
         curso2.turno = "NOITE";
