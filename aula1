@@ -5,14 +5,10 @@ public class GerenciarEscola {
     public static void main(String[] args) {
         //Intenção: criar dois cursos
         //Em seguida apresentar os dados dos mesmos
-        Curso curso1 = new Curso();
-        curso1.cursoId = 1;
-        curso1.descricao = "ADS";
-        curso1.turno = "NOITE";
-        curso1.local = "FATEC";
+        Curso
         curso1.sala = "A5";
 
-        Curso curso2 = new Curso();
+        Curso curso2 = no();
         curso2.cursoId = 2;
         curso2.descricao = "PROJETOS";
         curso2.turno = "NOITE";
